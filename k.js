@@ -72,6 +72,14 @@ function loadK(){
     return e;
   };
 
+  $.clone = function(e, s){
+    if(s == null){
+      return e.cloneNode(true);
+    }else{
+      return e.cloneNode(false);
+    }
+  };
+
   $.htm = function(s, v){
     if(v == null){
       return s.innerHTML;
